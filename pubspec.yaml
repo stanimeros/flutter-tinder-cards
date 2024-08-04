@@ -1,7 +1,7 @@
 name: flutter_tinder_cards
-description: "A new Flutter package project."
+description: A Flutter package for creating Tinder-like swipeable cards.
 version: 0.0.1
-homepage:
+homepage: https://github.com/stanimeros/flutter_tinder_cards
 
 environment:
   sdk: '>=3.4.4 <4.0.0'
