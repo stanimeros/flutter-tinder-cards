@@ -7,12 +7,14 @@ class TinderCard extends StatefulWidget {
   final List<String> imageURLs;
   final Function onDrag;
   final Color skeletonBackgroundColor;
+  final Widget overlayWidget;
 
   const TinderCard({
     super.key,
     this.imageURLs = const [],
     required this.onDrag,
-    this.skeletonBackgroundColor = const Color.fromARGB(255, 69, 69, 69)
+    this.overlayWidget = const Column(),
+    this.skeletonBackgroundColor = const Color.fromARGB(255, 69, 69, 69),
   });
 
   @override
@@ -91,6 +93,7 @@ class _TinderCardState extends State<TinderCard> {
             PhotoSlider(
               imageURLs: widget.imageURLs,
             ),
+            widget.overlayWidget
           ],
         ),
       )
